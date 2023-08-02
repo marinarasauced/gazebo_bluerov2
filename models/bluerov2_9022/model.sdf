@@ -8,7 +8,7 @@
     <link name="base_link">
       <inertial>
         <pose>0.0 0.0 0.011 0 0 0</pose>
-        <mass>10.0</mass>
+        <mass>6.026</mass>
         <inertia>
           <ixx>0.099</ixx>
           <ixy>0</ixy>
@@ -68,6 +68,115 @@
 
     </link>
 
+    <!-- april4 link -->
+    <link name="april4">
+      <visual name='main_Visual'>
+        <pose>0.215 -0.12 0.08 0 1.571 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+          <size>0.08 0.08 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Apriltag36_11_00004/materials/textures/tag36_11_00004.png</albedo_map>
+              <normal_map>model://Apriltag36_11_00004/materials/textures/tag36_11_00004.png</normal_map>
+              <roughness>0.9</roughness>
+              <metalness>0.01</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+
+    <!-- visual link without any weight or buoyancy-->
+    <link name="april5">
+
+      <visual name='main_Visual'>
+        <pose>0.215 0.12 0.08 0 1.571 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+          <size>0.08 0.08 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Apriltag36_11_00005/materials/textures/tag36_11_00005.png</albedo_map>
+              <normal_map>model://Apriltag36_11_00005/materials/textures/tag36_11_00005.png</normal_map>
+              <roughness>0.9</roughness>
+              <metalness>0.01</metalness>
+            </metal>
+          </pbr>
+          <name>Apriltag36_11_00006</name>
+        </material>
+      </visual>
+    </link>
+
+
+    <!-- April2 link -->
+    <link name="april6">
+      <visual name='main_Visual'>
+        <pose>-0.215 -0.12 0.08 0 1.571 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+          <size>0.08 0.08 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Apriltag36_11_00006/materials/textures/tag36_11_00006.png</albedo_map>
+              <normal_map>model://Apriltag36_11_00006/materials/textures/tag36_11_00006.png</normal_map>
+              <roughness>0.9</roughness>
+              <metalness>0.01</metalness>
+            </metal>
+          </pbr>
+          <name>Apriltag36_11_00006</name>
+        </material>
+      </visual>
+    </link>
+
+    <!-- April3 link -->
+    <link name="april7">
+      <visual name='main_Visual'>
+        <pose>-0.215 0.12 0.08 0 1.571 0</pose>
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+          <size>0.08 0.08 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Apriltag36_11_00007/materials/textures/tag36_11_00007.png</albedo_map>
+              <normal_map>model://Apriltag36_11_00007/materials/textures/tag36_11_00007.png</normal_map>
+              <roughness>0.9</roughness>
+              <metalness>0.01</metalness>
+            </metal>
+          </pbr>
+          <name>Apriltag36_11_00007</name>
+        </material>
+      </visual>
+    </link>
+
     <!-- Hydrodynamics plugin -->
     <plugin
         filename="gz-sim-hydrodynamics-system"
@@ -97,6 +206,33 @@
       <nRabsR>-3.992</nRabsR>
     </plugin>
 
+    <!-- link aprilpp0 to base_link-->
+    <joint name="april4_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>april4</child>
+      <pose>0.06 0 0.075 0 0 0</pose>
+    </joint>
+
+    <!-- link april1 to base_link-->
+    <joint name="april5_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>april5</child>
+      <pose>0.06 0 0.075 0 0 0</pose>
+    </joint>
+
+    <!-- link april2 to base_link-->
+    <joint name="april6_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>april6</child>
+      <pose>-0.06 0 0.075 0 0 0</pose>
+    </joint>
+
+    <!-- link april3 to base_link-->
+    <joint name="april7_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>april7</child>
+      <pose>-0.215 0.12 0.08 0 1.571 0</pose>
+    </joint>
 
     <link name="thruster1">
       <pose>0.14 -0.092 0.0 -1.571 1.571 -0.785</pose>
