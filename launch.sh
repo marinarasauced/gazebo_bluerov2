@@ -10,7 +10,7 @@ export GZ_SIM_RESOURCE_PATH=$PWD/build/_deps/ardupilot_gazebo-src/models:$PWD/bu
 export GZ_SIM_RESOURCE_PATH=$PWD/models:$PWD/worlds:$GZ_SIM_RESOURCE_PATH
 
 gz sim -v4 -s -r bluerov2_camera.world &
-gz sim -v4 -g -r bluerov2_camera.world
+gz sim -v4 -g
 
 # kill all child processes
 kill -- -$$
