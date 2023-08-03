@@ -16,6 +16,17 @@ endif()
 find_package(gz-cmake3 REQUIRED)
 set(GZ_CMAKE_VER ${gz-cmake3_VERSION_MAJOR})
 
+CPMAddPackage("gh:ArduPilot/ardupilot_gazebo#0316763")
+if(${ardupilot_gazebo_ADDED})
+  # build ardupilot_gazebo
+  message("Successfully added ardupilot_gazebo")
+endif()
+
+add_subdirectory(src)
+
+# --------------------------------------------------------------------------- #
+set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin)
+
 install(
   DIRECTORY
   models/
