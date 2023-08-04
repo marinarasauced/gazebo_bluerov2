@@ -56,15 +56,20 @@
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
     </include> -->
 
-    <include>
+    <!-- <include>
       <uri>model://sand_heightmap</uri>
       <pose>0 7 -10 0 0 0</pose>
+    </include> -->
+
+    <include>
+      <uri>model://pool_map_rome</uri>
+      <pose>15 0 -0.3 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://bluerov2_9012</uri>
       <name>bluerov2_9012</name>
-      <pose>0 0 -2 0 0 0</pose>
+      <pose>2 0 2 0 0 0</pose>
     </include>
 
     <include>
