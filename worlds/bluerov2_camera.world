@@ -61,7 +61,7 @@
     </include> -->
 
     <include>
-      <uri>model://pool_map_rome</uri>
+      <uri>model://pool_map</uri>
       <pose>15 0 -0.3 0 0 0</pose>
     </include>
 
