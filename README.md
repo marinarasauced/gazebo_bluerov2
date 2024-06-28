@@ -1,7 +1,7 @@
-# BlueROV2 in Gazebo Garden
+# BlueROV2 in Gazebo Harmonic
 
 This is a model of the BlueROV2, including support for both the base and heavy
-configurations, that runs in Gazebo Garden. It uses the BuoyancyPlugin,
+configurations, that runs in Gazebo Harmonic. It uses the BuoyancyPlugin,
 HydrodynamicsPlugin and ThrusterPlugin.
 
 ![BlueROV2 Gazebo](images/bluerov2.png)
