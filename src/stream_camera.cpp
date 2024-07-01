@@ -1,4 +1,4 @@
-//build with $ g++ image_cv_gst.cpp -o cv_gst_udp `pkg-config --cflags --libs gz-transport12 gz-msgs9 opencv4`
+//build with $ g++ image_cv_gst.cpp -o cv_gst_udp `pkg-config --cflags --libs gz-transport13 gz-msgs10 opencv4`
 //
 // TEST WITH GST IN TERMINAL:
 // $ gst-launch-1.0 -ve udpsrc port=5000 ! tsparse ! tsdemux ! h264parse ! avdec_h264 ! videoconvert ! autovideosink sync=false
