@@ -19,7 +19,7 @@
     <!-- All camera related plugins -->
     <plugin
       filename="gz-sim-sensors-system"
-      name="gz::sim::v7::systems::Sensors">
+      name="gz::sim::v8::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
 <!-- 
