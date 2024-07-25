@@ -69,7 +69,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00001</name>
         </material>
       </visual>
       <visual name='april2'>
@@ -92,7 +91,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00002</name>
         </material>
       </visual>
       <visual name='april3'>
@@ -115,7 +113,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00003</name>
         </material>
       </visual>
       <sensor name="camera" type="camera">

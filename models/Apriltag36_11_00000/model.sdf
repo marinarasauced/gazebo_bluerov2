@@ -9,7 +9,7 @@
           <size>1.0 1.0 0.01</size>
           </box>
         </geometry>
-           <material>
+        <material>
           <script>
             <uri>model://Apriltag36_11_00000/materials/scripts</uri>
             <uri>model://Apriltag36_11_00000/materials/textures</uri>
