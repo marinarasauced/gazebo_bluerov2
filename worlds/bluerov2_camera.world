@@ -68,14 +68,12 @@
     <include>
       <uri>model://bluerov2</uri>
       <name>robot1</name>
-      <namespace>robot1</namespace>
       <pose>0 0 2 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://bluerov2</uri>
       <name>robot2</name>
-      <namespace>robot2</namespace>
       <pose>1 1 2 0 0 0</pose>
     </include>
 <!-- 
