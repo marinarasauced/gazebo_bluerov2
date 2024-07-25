@@ -135,11 +135,13 @@
             <uri>model.dae</uri>
           </mesh>
         </geometry>
-        <surface/>
-        <contact/>
-        <collide_bitmask>0x01</collide_bitmask>
+        <surface>
+          <contact>
+            <collide_bitmask>0x01</collide_bitmask>
+          </contact>
+        </surface>
       </collision>
     </link>
+
   </model>
-  <static>true</static>
 </sdf>
