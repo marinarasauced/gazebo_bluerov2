@@ -16,7 +16,7 @@ endif()
 find_package(gz-cmake3 REQUIRED)
 set(GZ_CMAKE_VER ${gz-cmake3_VERSION_MAJOR})
 
-CPMAddPackage("gh:marinarasauced/ardupilot_gazebo#2173e94")
+CPMAddPackage("gh:blksail-edu/ardupilot_gazebo#d5ce36")
 if(${ardupilot_gazebo_ADDED})
   # build ardupilot_gazebo
   message("Successfully added ardupilot_gazebo")
