@@ -131,7 +131,6 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-          
             <uri>model.dae</uri>
           </mesh>
         </geometry>
