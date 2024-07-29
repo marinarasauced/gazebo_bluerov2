@@ -5,3 +5,4 @@ cmake-build-debug/
 .mypy_cache/
 build/
 bin/
+log/

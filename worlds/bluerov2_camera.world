@@ -19,7 +19,7 @@
     <!-- All camera related plugins -->
     <plugin
       filename="gz-sim-sensors-system"
-      name="gz::sim::v7::systems::Sensors">
+      name="gz::sim::v8::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
 <!-- 
@@ -61,7 +61,7 @@
     </include> -->
 
     <include>
-      <uri>model://pool_map_rome</uri>
+      <uri>model://pool_map</uri>
       <pose>15 0 -0.3 0 0 0</pose>
     </include>
 
@@ -69,6 +69,7 @@
       <uri>model://bluerov2</uri>
       <pose>0 0 2 0 0 0</pose>
     </include>
+
 <!-- 
     <include>
       <uri>model://axes</uri>

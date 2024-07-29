@@ -66,7 +66,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00005</name>
         </material>
       </visual>
 
@@ -90,7 +89,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00005</name>
         </material>
       </visual>
 
@@ -114,7 +112,6 @@
               <metalness>0.01</metalness>
             </metal>
           </pbr>
-          <name>Apriltag36_11_00005</name>
         </material>
       </visual>
 
@@ -138,11 +135,12 @@
             <uri>model.dae</uri>
           </mesh>
         </geometry>
-        <surface/>
-        <contact/>
-        <collide_bitmask>0x01</collide_bitmask>
+        <surface>
+          <contact>
+            <collide_bitmask>0x01</collide_bitmask>
+          </contact>
+        </surface>        
       </collision>
     </link>
   </model>
-  <static>true</static>
 </sdf>
