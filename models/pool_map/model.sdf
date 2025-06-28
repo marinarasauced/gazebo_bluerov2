@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.8">
-  <model name="test">
+  <model name="pool">
     <static>true</static>
     <link name="testlink">
       <visual name="Cube">
@@ -25,26 +25,6 @@
           </pbr>
         </material>
       </visual>
-      
-      <!-- </visual name='lane'>
-        <pose>0 0 0 0 0 0</pose>
-        <geometry>
-          <box>
-            <size>10 0.1 0.1</size>
-          </box>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0 1.0</diffuse>
-          <specular>0.0 0.0 0.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>Black.png</albedo_map>
-              <roughness>0.9</roughness>
-              <metalness>0.01</metalness>
-            </metal>
-          </pbr>
-      </material>
-      </visual> -->
 
       <visual name='lane0'>
         <pose>-12 1.5 -0.37 0 0 0</pose>
