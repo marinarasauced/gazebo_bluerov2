@@ -2,6 +2,8 @@
 <sdf version="1.6">
   <world name="bluerov2_pool_sim">
 
+    <magnetic_field>0.21523 0.0 0.42741</magnetic_field>
+
     <!-- Base Gazebo plugins -->
     <plugin
         filename="gz-sim-physics-system"
@@ -22,8 +24,14 @@
       <render_engine>ogre2</render_engine>
     </plugin>
 
-    <plugin filename="libgz-sim-imu-system.so"
-            name="gz::sim::systems::Imu">
+    <plugin
+      filename="libgz-sim-imu-system.so"
+      name="gz::sim::systems::Imu">
+    </plugin>
+
+    <plugin
+      filename="libgz-sim-magnetometer-system.so"
+      name="gz::sim::systems::Magnetometer">
     </plugin>
 
     <plugin
