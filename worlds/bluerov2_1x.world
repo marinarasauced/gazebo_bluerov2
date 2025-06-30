@@ -58,7 +58,7 @@
     </include>
 
     <include>
-      <uri>model://bluerov2_2025</uri>
+      <uri>model://bluerov2_2025_port_9002</uri>
       <name>rov1</name>
       <pose>0 0 2 0 3.14159 0</pose>
     </include>
