@@ -1,4 +1,4 @@
-model_name: "bluerov2"
+model_name: "bluerov2_2025_port_9002"
 mass: 10.0
 fluid_density: 998.0
 control_method: 0
