@@ -1,7 +1,7 @@
 
 #include <math.h>
 
-#include <gz/msgs/double.pb.h>
+#include <gz/msgs/fluid_pressure.pb.h>
 
 #include <gz/common/Console.hh>
 #include <gz/msgs/Utility.hh>
@@ -25,7 +25,7 @@ bool PressureSensor::Load(const sdf::Sensor &_sdf)
 
   gz::sensors::Sensor::Load(_sdf);
 
-  this->pub = this->node.Advertise<gz::msgs::Double>(this->Topic());
+  this->pub = this->node.Advertise<gz::msgs::FluidPressure>(this->Topic());
 
   // Load noise if available
   if (_sdf.Element()->HasElement("noise"))
@@ -46,13 +46,15 @@ bool PressureSensor::Load(const sdf::Sensor &_sdf)
 //////////////////////////////////////////////////
 bool PressureSensor::Update(const std::chrono::steady_clock::duration &_now)
 {
-  gz::msgs::Double msg;
+  gz::msgs::FluidPressure msg;
   *msg.mutable_header()->mutable_stamp() = gz::msgs::Convert(_now);
+
   auto frame = msg.mutable_header()->add_data();
   frame->set_key("frame_id");
   frame->add_value(this->Name());
 
-  msg.set_data(this->pressure);
+  msg.set_pressure(this->pressure);
+  // msg.set_variance(this->noise ? this->noise->Variance() : 0.0);
 
   this->AddSequence(msg.mutable_header());
   this->pub.Publish(msg);
