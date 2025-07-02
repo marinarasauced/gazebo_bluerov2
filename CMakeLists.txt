@@ -23,6 +23,7 @@ if(${ardupilot_gazebo_ADDED})
 endif()
 
 add_subdirectory(src)
+add_subdirectory(plugins)
 
 # --------------------------------------------------------------------------- #
 set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin)

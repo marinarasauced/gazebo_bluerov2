@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<sdf version="1.6">
+<sdf version="1.6" xmlns:gz="https://gazebosim.org/schemas">
   <model name="bluerov2_2025_port_9012">
     <pose>0 0 0 0 0 0</pose>
 
@@ -160,6 +160,17 @@
         <update_rate>30</update_rate>
         <magnetometer>
         </magnetometer>
+      </sensor>
+
+      <sensor name="pressure_sensor" type="custom" gz:type="pressure">
+        <pose>0 0 0 0 0 0</pose>
+        <always_on>true</always_on>
+        <update_rate>20</update_rate>
+        <visualize>false</visualize>
+        
+        <custom_type>pressure</custom_type>
+        <!-- <topic>/pressure</topic> -->
+        
       </sensor>
 
     </link>

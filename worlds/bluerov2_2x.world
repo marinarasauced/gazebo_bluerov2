@@ -43,6 +43,11 @@
     </plugin>
 
     <plugin
+      filename="PressureSensorSystem"
+      name="custom::PressureSensorSystem">  
+    </plugin>
+
+    <plugin
         filename="gz-sim-buoyancy-system"
         name="gz::sim::systems::Buoyancy">
       <graded_buoyancy>

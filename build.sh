@@ -17,6 +17,8 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 # build plugins
 cmake --build . --target ArduPilotPlugin -- -j$(nproc)
 cmake --build . --target ParachutePlugin -- -j$(nproc)
+cmake --build . --target PressureSensor -- -j$(nproc)
+cmake --build . --target PressureSensorSystem -- -j$(nproc)
 
 # build stream_camera
 cmake --build . --target stream_camera -- -j$(nproc)
